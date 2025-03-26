@@ -22,7 +22,7 @@
    ```  
 2. Click on **Databases** → Create a new database named:  
    ```
-   soil_npk
+   soil_npk_analysis
    ```  
 3. Click on the **Import** tab → Select `database/soil_npk.sql` file → Click **Go**.  
 
