@@ -1,0 +1,278 @@
+/* Global Styles */
+:root {
+    --primary-color: #4CAF50;
+    --secondary-color: #8BC34A;
+    --dark-color: #2E7D32;
+    --light-color: #F1F8E9;
+    --soil-brown: #8B4513;
+    --text-color: #333;
+    --border-radius: 8px;
+    --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    --transition: all 0.3s ease;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: var(--text-color);
+    line-height: 1.6;
+    background-color: #FAFAFA;
+    transition: var(--transition);
+}
+
+/* Dark Mode */
+body.dark-mode {
+    background-color: #121212;
+    color: #f5f5f5;
+}
+
+body.dark-mode .navbar,
+body.dark-mode .card {
+    background-color: #1E1E1E !important;
+    color: #f5f5f5;
+}
+
+body.dark-mode .card {
+    border-color: #333;
+}
+
+body.dark-mode .text-dark {
+    color: #f5f5f5 !important;
+}
+
+body.dark-mode .form-control,
+body.dark-mode .form-select {
+    background-color: #2D2D2D;
+    border-color: #444;
+    color: #f5f5f5;
+}
+
+body.dark-mode .table {
+    color: #f5f5f5;
+}
+
+body.dark-mode .bg-light {
+    background-color: #2D2D2D !important;
+}
+
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/hero-banner.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 120px 0;
+    position: relative;
+}
+
+.hero-content {
+    max-width: 600px;
+}
+
+.hero-title {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+
+.hero-subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    opacity: 0.9;
+}
+
+/* Feature Cards */
+.feature-card {
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    transition: var(--transition);
+    height: 100%;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.feature-icon {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+/* Steps Section */
+.step-card {
+    border-radius: var(--border-radius);
+    border-left: 4px solid var(--primary-color);
+    transition: var(--transition);
+}
+
+.step-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--box-shadow);
+}
+
+.step-number {
+    background-color: var(--primary-color);
+    color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    margin-right: 1rem;
+}
+
+/* Form Styles */
+.form-control:focus,
+.form-select:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 0.25rem rgba(76, 175, 80, 0.25);
+}
+
+.input-group-text {
+    background-color: var(--primary-color);
+    color: white;
+    border-color: var(--primary-color);
+}
+
+/* Results Page */
+.result-card {
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    transition: var(--transition);
+}
+
+.result-card .card-header {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.table-comparison th {
+    background-color: var(--light-color);
+}
+
+.deficiency {
+    color: #D32F2F;
+    font-weight: 500;
+}
+
+.excess {
+    color: #1976D2;
+    font-weight: 500;
+}
+
+.optimal {
+    color: var(--primary-color);
+    font-weight: 500;
+}
+
+/* Animations */
+.fade-in {
+    animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 2.5rem;
+    }
+    
+    .hero-section {
+        padding: 80px 0;
+    }
+}
+
+/* Live Conversion Display */
+.conversion-display {
+    background-color: var(--light-color);
+    border-radius: var(--border-radius);
+    padding: 10px 15px;
+    margin-top: 5px;
+    font-weight: 500;
+    transition: var(--transition);
+}
+
+body.dark-mode .conversion-display {
+    background-color: #2D2D2D;
+}
+
+/* Fertilizer Recommendation */
+.fertilizer-card {
+    border-left: 4px solid var(--primary-color);
+    transition: var(--transition);
+}
+
+.fertilizer-card:hover {
+    transform: translateX(5px);
+}
+
+/* PDF Button */
+.btn-pdf {
+    background-color: #FF5722;
+    color: white;
+}
+
+.btn-pdf:hover {
+    background-color: #E64A19;
+    color: white;
+}
+
+/* Store Links */
+.store-link {
+    display: inline-block;
+    margin-right: 15px;
+    text-align: center;
+}
+
+.store-icon {
+    font-size: 2rem;
+    margin-bottom: 5px;
+}
+
+/* Footer Styling */
+.footer {
+    background-color: #222; /* Dark background */
+    color: #fff;
+    padding: 40px 0;
+}
+
+/* Increase heading size for Quick Links, Resources, Contact Us */
+.footer h6 {
+    font-size: 18px; /* Slightly bigger */
+    font-weight: bold; /* Bold */
+    margin-bottom: 12px;
+}
+
+/* Subheadings (Links under each section) */
+.footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer ul li {
+    font-size: 16px; /* Slightly smaller than heading */
+    margin-bottom: 8px;
+}
+
+/* Make social media icons slightly larger */
+.footer .social-icons a {
+    font-size: 22px; /* Increased size */
+    margin-right: 12px;
+}
+
+/* Make footer links visible */
+.footer a {
+    color: #f8f9fa;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
