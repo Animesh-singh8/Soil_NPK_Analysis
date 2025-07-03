@@ -41,4 +41,5 @@ Step 4: Configure Database Connection
   ```
   http://localhost/Soil_NPK_Analysis/
   ```  
-- Start using the **Soil NPK Analysis System**.  
+- Start using the **Soil NPK Analysis System**. 
+Animesh singh 
